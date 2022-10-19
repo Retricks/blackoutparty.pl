@@ -16,3 +16,25 @@ function UpdateTime(){
         document.getElementById("Seconds").innerHTML="--";
     }
 }
+
+let isNight = false;
+document.querySelector("#toggleNightMode").addEventListener("click", ()=>{
+    let nightmode = document.querySelector(".toggleNightMode__slider");
+    let slider = document.querySelector(".toggleNightMode__slider-point");
+    let mobileNav = document.querySelector(".mobile-nav");
+    let mobileNavLink = document.querySelector(".mobile-nav__link--active");
+    if(isNight){
+        nightmode.style.background = "#ccc";
+        isNight = false;
+        slider.style.transform = "translateY(-13px)";
+        mobileNav.style.background = "var(--bright-color)";
+        mobileNavLink.style.color = "var(--second-color)";
+    }
+    else{
+        nightmode.style.background = "black";
+        isNight = true;
+        slider.style.transform = "none";
+        mobileNav.style.background = "#111";
+        mobileNavLink.style.color = "var(--primary-color)";
+    }
+})
