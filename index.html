@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="Organizowanie imprez w powiecie Cieszyńskim">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/main.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="icon" type="image/png" href="./images/logo.png">
+    <title>Strona Główna - Blackout</title>
+</head>
+<body>
+    <header class="primary-header">
+        <div class="primary-header__container">
+            <div class="container primary-nav-flex">
+                <a href="#"><img src="images/logo.png" class="primary-nav__logo" alt="logo Blackout"></a>
+                <nav class="primary-nav">
+                    <ul role="list" class="primary-nav__links">
+                        <li><a href="#" class="primary-nav__link primary-nav__link--active"><i class="fas fa-home"></i>Strona Główna</a></li>
+                        <li><a href="./galeria/" class="primary-nav__link"><i class="fas fa-photo-film"></i>Galeria</a></li>
+                        <li><a href="./imprezy/" class="primary-nav__link"><i class="fas fa-champagne-glasses"></i>Imprezy</a></li>
+                        <li><a href="./regulamin/" class="primary-nav__link"><i class="fas fa-book"></i>Regulamin</a></li>
+                    </ul>
+                </nav>
+                <div class="primary-nav__hamburger" id="hamburger"><i class="fas fa-hamburger"></i></div>
+                <a href="#" class="btn primary-nav-btn btn--yellow-border"><i class="fa-solid fa-ticket"></i>Kup bilety</a>
+            </div>
+        </div>
+        
+        <div class="hero__back"></div>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-flex">
+                    <h1 class="hero__heading"><span class="--bigger"><span class="--black">Black</span><span class="--red">out</span></span><br>najlepsze imprezy w powiecie Cieszyńskim</h1>
+                    <p class="hero__paragraph">Wpadnij do nas po więcej!</p>
+                    <div class="hero__buttons">
+                        <a href="#" class="btn btn--yellow-border"><i class="fa-brands fa-facebook-f"></i>Fanpage</a>
+                        <a href="#" class="btn btn--yellow"><i class="fa-solid fa-calendar-days"></i>Odwiedź wydarzenie</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="countDown">
+            <div class="container section-container flex">
+                <h2 class="countDown__heading">Odliczanie do imprezy:</h2>
+                <div class="countDown__box">
+                    <div class="countDown__column flex reflect">
+                        <div class="countDown__text" id="textDays">DNI</div>
+                        <div id="Days" class="countDown__item">0</div>
+                    </div>
+
+                    <div class="countDown__column flex reflect">
+                        <div class="countDown__text" id="textHours">GODZIN</div>
+                        <div id="Hours" class="countDown__item">0</div>
+                    </div>
+
+                    <div class="countDown__column flex reflect">
+                        <div class="countDown__text" id="textDays">MINUT</div>
+                        <div id="Minutes" class="countDown__item">0</div>
+                    </div>
+                    
+                    <div class="countDown__column flex reflect">
+                        <div class="countDown__text" id="textDays">SEKUND</div>
+                        <div id="Seconds" class="countDown__item">0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <nav class="mobile-nav">
+        <ul role="list" class="mobile-nav__links">
+            <li><a href="#" class="mobile-nav__link mobile-nav__link--active"><i class="fas fa-home"></i><span class="mobile-nav__text">Strona Główna</span></a></li>
+            <li><a href="./galeria/" class="mobile-nav__link"><i class="fas fa-photo-film"></i><span class="mobile-nav__text">Galeria</span></a></li>
+            <li><a href="./imprezy/" class="mobile-nav__link"><i class="fas fa-champagne-glasses"></i><span class="mobile-nav__text">Imprezy</span></a></li>
+            <li><a href="./regulamin/" class="mobile-nav__link"><i class="fas fa-book"></i><span class="mobile-nav__text">Regulamin</span></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
