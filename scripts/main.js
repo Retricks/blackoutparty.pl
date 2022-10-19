@@ -16,18 +16,3 @@ function UpdateTime(){
         document.getElementById("Seconds").innerHTML="--";
     }
 }
-
-let hamburgerOpen = false;
-let hamburger = document.querySelector("#hamburger");
-hamburger.addEventListener("click", () => {
-    let navigator = document.querySelector(".primary-nav");
-    navigator.classList.toggle("showNav");
-    if (hamburgerOpen == false){
-        document.querySelector("#hamburger").style.color = "black";
-        hamburgerOpen = true;
-    }
-    else{  
-        document.querySelector("#hamburger").style.color = "white";
-        hamburgerOpen = false;
-    }
-});

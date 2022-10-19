@@ -107,7 +107,7 @@ body{
     backdrop-filter: blur(5px);
 }
 
-.primary-nav-flex{
+.primary-header-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,7 +116,7 @@ body{
 i {
   margin: 0 0.5rem 0 0;
 }
-.primary-nav__logo{
+.primary-header__logo{
     width: 5em;
     display: inline-block;
 }
@@ -281,15 +281,6 @@ i {
 }
 
 /* =======NAVIGATOR IMPORTANT THINGS======= */
-.primary-nav__hamburger{
-  display: none;
-  z-index: 100;
-  height: 2em;
-  width: 2em;
-}
-.primary-nav__hamburger i{
-  font-size: 2em;
-}
 .mobile-nav{
   display: none;
 }
@@ -340,27 +331,10 @@ i {
   .primary-nav{
     display: none;
   }
-  .primary-nav-btn{
-    display: none;
-  }
-  .primary-nav__hamburger{
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    color: var(--bright-color);
-    outline: 0;
-    border: 0;
-    background: transparent;
-  }
-  .showNav{
-    display: block;
+  .primary-header__container{
+    font-size: 2em;
     position: absolute;
-    right: 0;
     top: 0;
-    height: 100vh;
-    width: 40vw;
-    margin: 0;
-    background: var(--bright-color);
   }
   .primary-nav__links{
     inset: 0;
