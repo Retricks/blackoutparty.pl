@@ -291,6 +291,9 @@ i {
 .primary-nav__hamburger i{
   font-size: 2em;
 }
+.mobile-nav{
+  display: none;
+}
 
 
 /* =======MEDIA======= */
