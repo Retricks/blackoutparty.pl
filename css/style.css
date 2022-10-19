@@ -43,7 +43,7 @@
 .container{
     --max-width: 1110px;
     height: 100%;
-    width: min(var(--max-width), 98%);
+    width: min(var(--max-width), 95%);
     margin-inline: auto;
 }
 .section-container{
@@ -146,7 +146,6 @@ i {
   background-color: var(--transparent-color);
   color: var(--bright-color);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
   border: 1px solid var(--transparent-color);
 }
 /* =======HERO======= */
@@ -297,6 +296,11 @@ i {
 
 
 /* =======MEDIA======= */
+@media (max-width: 60em){
+  body{
+    font-size: 0.8rem;
+  }
+}
 
 @media (max-width: 50em){
 /* =======NAVIGATOR IMPORTANT THINGS======= */
@@ -314,7 +318,6 @@ i {
     gap: 3em;
     height: 100%;
     width: 100%;
-    padding: 0;
     margin: 0;
   }
   .mobile-nav__link{
@@ -368,7 +371,6 @@ i {
     align-items: center;
     justify-content: center;
     gap: 3em;
-    padding: 0;
   }
   .primary-nav__link{
     color: black;
@@ -397,5 +399,27 @@ i {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+  }
+}
+
+@media (max-width: 40em){
+  body{
+    font-size: 0.6rem;
+  }
+  .hero-flex{
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 30em){
+  body{
+    font-size: 0.5rem;
+  }
+  .hero-flex{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 35em){
+  body{
+    font-size: 0.4rem;
   }
 }
