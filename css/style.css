@@ -381,19 +381,26 @@ i {
     font-size: 0.6rem;
   }
   .hero-flex{
-    font-size: 1.25rem;
+    font-size: 1rem;
+  }
+  .hero__heading{
+    font-size: 3rem;
+  }
+  .hero__paragraph{
+    font-size: 1rem;
   }
 }
-@media (max-width: 30em){
+@media (max-width: 25em){
   body{
     font-size: 0.5rem;
   }
   .hero-flex{
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
-}
-@media (max-width: 35em){
-  body{
-    font-size: 0.4rem;
+  .hero__heading{
+    font-size: 2rem;
+  }
+  .hero__paragraph{
+    font-size: 0.75rem;
   }
 }
