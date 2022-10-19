@@ -301,6 +301,7 @@ i {
 @media (max-width: 50em){
 /* =======NAVIGATOR IMPORTANT THINGS======= */
   .mobile-nav{
+    display: block;
     position: sticky;
     bottom: 0;
     background-color: var(--bright-color);
