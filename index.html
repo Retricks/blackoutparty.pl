@@ -8,11 +8,28 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/animations.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<link rel="icon" type="image/png" href="./images/logo.png">
     <title>Strona Główna - Blackout</title>
 </head>
 <body>
+    <div class="intro">
+        <div class="intro__container">
+            <h2 class="intro__heading">
+                <span class="intro__text --bigger">
+                    <span class="--black">Black</span><span class="--red">out</span>
+                </span>
+            </h2>
+            <h2 class="intro__heading">
+                <span class="intro__text hero__heading-rest">magiczne imprezy</span>
+            </h2>
+        </div>
+        <div class="intro__slider">
+            
+        </div>
+    </div>
     <header class="primary-header">
         <div class="primary-header__container">
             <div class="container primary-header-flex">
@@ -32,14 +49,14 @@
         <div class="hero__back"></div>
         <section class="hero">
             <div class="toggleNightMode-box">
+                <div class="toggleNightMode__text-box"><div class="toggleNightMode__text"><a>Tryb ciemny</a></div></div>
                 <div class="toggleNightMode" id="toggleNightMode">
                     <span class="toggleNightMode__slider"><span class="toggleNightMode__slider-point"></span></span>
                 </div>
-                <div class="toggleNightMode__text-box"><div class="toggleNightMode__text"><a>Tryb ciemny</a></div></div>
             </div>
             <div class="container">
                 <div class="hero-flex">
-                    <h1 class="hero__heading"><span class="--bigger"><span class="--black">Black</span><span class="--red">out</span></span><br><span class="hero__heading-rest">magiczne imprezy</span></h1>
+                    <h1 class="hero__heading"><span class="--bigger"><span class="--black">Black</span><span class="--red">out</span></span><span class="hero__heading-rest">magiczne imprezy</span></h1>
                     <p class="hero__paragraph">Wpadnij do nas po więcej!</p>
                     <div class="hero__buttons">
                         <a href="#" class="btn btn--yellow-border"><i class="fa-brands fa-facebook-f"></i>Fanpage</a>
@@ -89,7 +106,7 @@
                 <h2 class="heading">Zapisz się do newslettera</h2>
                 <div class="newsletter">
                     <input class="newsletter__input" type="text">
-                    <div class="btn btn--yellow-border">Wyślij</div>
+                    <div class="btn btn--yellow-border">Zapisz</div>
                 </div>
             </div>
             <div class="footer__column">

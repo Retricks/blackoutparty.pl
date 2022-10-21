@@ -34,6 +34,7 @@ document.querySelector("#toggleNightMode").addEventListener("click", ()=>{
 
         document.documentElement.style.setProperty("--primary-color", "hsl(347, 83%, 60%)");
         document.documentElement.style.setProperty("--second-color", "hsl(284, 79%, 24%)");
+        document.documentElement.style.setProperty("--darker-color", "hsl(284, 55%, 15%)");
         document.documentElement.style.setProperty("--third-color", "hsl(46, 100%, 62%)");
         document.documentElement.style.setProperty("--bright-color", "hsl(0, 0%, 100%)");
     }
@@ -46,6 +47,7 @@ document.querySelector("#toggleNightMode").addEventListener("click", ()=>{
 
         document.documentElement.style.setProperty("--primary-color", "hsl(347, 83%, 45%)");
         document.documentElement.style.setProperty("--second-color", "hsl(284, 79%, 14%)");
+        document.documentElement.style.setProperty("--darker-color", "hsl(284, 55%, 10%)");
         document.documentElement.style.setProperty("--third-color", "hsl(46, 100%, 40%)");
         document.documentElement.style.setProperty("--bright-color", "hsl(0, 0%, 90%)");
     }
