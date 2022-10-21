@@ -512,6 +512,7 @@ i {
   }
   .hero__heading{
     font-size: 4.25rem;
+    text-align: center;
   }
   .hero__paragraph{
     font-size: 1.75rem;
