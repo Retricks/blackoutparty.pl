@@ -1,4 +1,6 @@
-let date = new Date("Jul 1, 2023 20:00:00");	
+let currentDate = new Date();
+let date = new Date("Jul 1, 2023 20:00:00");
+document.querySelector("#currentDate").innerHTML = currentDate.getFullYear();
 let Int = setInterval(UpdateTime,1);
 function UpdateTime(){
     let Now = new Date().getTime();
