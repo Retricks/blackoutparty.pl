@@ -14,10 +14,11 @@
     --second-color: hsl(284, 79%, 24%);
     --third-color: hsl(46, 100%, 62%);
     --grey-color: hsl(0, 0%, 40%);
-    --transparent-color: rgba(255, 255, 255, 0.2);
+    --transparent-color: rgba(255, 255, 255, 0.1);
     --bright-color: hsl(0, 0%, 100%);
-    --darker-color: hsl(284, 55%, 15%);
-    --gradient-primary-color: linear-gradient(-45deg, var(--primary-color) -15%, var(--second-color) 80%, var(--primary-color) 115%);
+    --darker-color: hsl(284, 79%, 15%);
+    --darker-transparent-color: hsla(284, 79%, 15%, 0.774);
+    --gradient-primary-color: radial-gradient(circle at 82% 63%, rgba(183, 183, 183,0.09) 0%, rgba(183, 183, 183,0.09) 84%,transparent 84%, transparent 100%),radial-gradient(circle at 88% 98%, rgba(232, 232, 232,0.07) 0%, rgba(232, 232, 232,0.07) 15%,transparent 15%, transparent 100%),radial-gradient(circle at 77% 83%, rgba(252, 252, 252,0.05) 0%, rgba(252, 252, 252,0.05) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 64% 0%, rgba(140, 140, 140,0.05) 0%, rgba(140, 140, 140,0.05) 54%,transparent 54%, transparent 100%),radial-gradient(circle at 57% 86%, rgba(241, 241, 241,0.07) 0%, rgba(241, 241, 241,0.07) 80%,transparent 80%, transparent 100%),radial-gradient(circle at 17% 93%, rgba(68, 68, 68,0.05) 0%, rgba(68, 68, 68,0.05) 82%,transparent 82%, transparent 100%),radial-gradient(circle at 85% 70%, rgba(10, 10, 10,0.02) 0%, rgba(10, 10, 10,0.02) 13%,transparent 13%, transparent 100%),linear-gradient(90deg, var(--second-color),var(--primary-color));
     --gradient-heading-color: linear-gradient(45deg, var(--primary-color) -15%, var(--bright-color) 80%, var(--primary-color) 115%);
 
     --nav-height: 6em;
@@ -30,7 +31,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 1000;
+  z-index: 10000;
 }
 .intro__container{
   width: 100%;
@@ -97,7 +98,7 @@
 .heading{
   position: relative;
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: 1.75em;
 }
 .heading::before{
   content: '';
@@ -118,6 +119,13 @@
 .section-container{
   padding-block: var(--section-padding);
 }
+.full-size{
+  height: 100%;
+  width: 100%;
+}
+.fullvh{
+  height: 100vh;
+}
 
 .btn{
     background-color: transparent;
@@ -130,7 +138,6 @@
     transition: .3s linear;
     position: relative;
     cursor: pointer;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
 }
 .btn--yellow-border{
     padding: 0.6875em 1.25em;
@@ -162,8 +169,6 @@ body{
 /* =======HEADER======= */
 .primary-header{
   position: relative;
-  height: 100vh;
-
 }
 
 /* =======NAV======= */
@@ -235,7 +240,8 @@ i {
 
 .hero{
   position: relative;
-  height: 85%;
+  height: 85%; 
+  font-size: 1.25em;
 }
 .hero-flex{
   height: 100%;
@@ -319,29 +325,62 @@ i {
 /*                               */
 
 
+/* =======GALLERY======= */
+.gallery{
+  z-index: 1;
+}
+.gallery__box{
+  width: 100%;
+}
+.gallery__box::before{
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallery__box::before{
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallery__column{
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.gallery__image{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
 
 /* =======REFLECT======= */
 .reflect{
   -webkit-box-reflect: below 0px linear-gradient(#ffffff00, #ffffff86);
-  z-index: -1;
 }
 /* =======COUNTDOWN======= */
+.main{
+  background: var(--transparent-color);
+}
+.countDown{
+  z-index: 1;
+}
 .countDown__box{
   width: 100%;
   padding-top: var(--section-padding);
-  padding-bottom: calc(var(--section-padding));
+  padding-bottom: var(--section-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @supports (-webkit-box-reflect: below 0px linear-gradient(#ffffff00, #ffffff86)){
   .countDown__box{
-    padding-bottom: calc(var(--section-padding) + 8em);
+    padding-bottom: calc(var(--section-padding) + 6em);
   }
 }
 .countDown__column{
   background-color: var(--transparent-color);
-  border-radius: 2rem;
+  border-radius: 2em;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   border: 1px solid var(--transparent-color);
@@ -360,10 +399,10 @@ i {
 
 /* =======FOOTER======= */
 .footer{
-  background: var(--darker-color);
-  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   position: relative;
+  background: var(--darker-transparent-color);
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 }
 .footer__headings{
   flex-direction: row;
@@ -443,6 +482,7 @@ i {
 @media (max-width: 50em){
 /* =======NAVIGATOR IMPORTANT THINGS======= */
   .mobile-nav{
+    font-size: 0.75em;
     display: block;
     position: sticky;
     bottom: 0;
@@ -479,9 +519,12 @@ i {
     display: none;
   }
   .primary-header__container{
-    font-size: 2em;
-    position: absolute;
+    font-size: 1.75em;
+    position: relative;
     top: 0;
+  }
+  .absolute{
+    position: absolute;
   }
   .primary-nav__links{
     inset: 0;
@@ -496,69 +539,58 @@ i {
   .primary-nav__link{
     color: black;
   }
-
-
   body{
-    font-size: 0.7rem;
+    font-size: 0.9em;
   }
   .hero{
     height: 100%;
+    font-size: 1.5em;
   }
   .hero-flex{
     align-items: center;
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
   }
   .hero__heading{
-    font-size: 4.25rem;
     text-align: center;
-  }
-  .hero__paragraph{
-    font-size: 1.75rem;
   }
   .hero__buttons{
     display: flex;
     flex-direction: column;
     gap: 0.5em;
   }
+  .countDown__column{
+    font-size: 1.25em;
+  }
   .footer__box{
     flex-direction: column;
+  }
+  .intro{
+    font-size: 0.75em;
   }
 }
 
 @media (max-width: 35em){
   body{
-    font-size: 0.6rem;
-  }
-  .hero-flex{
-    font-size: 1.1rem;
-  }
-  .hero__heading{
-    font-size: 3rem;
-  }
-  .hero__paragraph{
-    font-size: 1.25rem;
-  }
-  .heading{
-    font-size: 1.3rem;
+    font-size: 0.75em;
   }
 }
 @media (max-width: 25em){
   body{
-    font-size: 0.5rem;
+    font-size: 0.6em;
   }
-  .hero-flex{
-    font-size: 0.9rem;
+}
+@media (max-width: 25em){
+  body{
+    font-size: 0.6em;
   }
-  .hero__heading{
-    font-size: 2.5rem;
+}
+@media (max-width: 19em){
+  body{
+    font-size: 0.6em;
   }
-  .hero__paragraph{
-    font-size: 1rem;
-  }
-  .heading{
-    font-size: 1rem;
+  .countDown__column{
+    flex: 0.1em;
   }
 }
 
@@ -571,10 +603,11 @@ i {
 }
 
 .toggleNightMode-box {
+  z-index: 1000;
   background: var(--transparent-color);
   border-radius: .5em 0 0 .5em;
   position: fixed;
-  top: 20%;
+  top: 30%;
   right: 0;
   display: inline-block;
   width: 3.375em;

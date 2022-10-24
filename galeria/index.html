@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="Organizowanie imprez w powiecie Cieszyńskim">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <script src="../scripts/main.js" defer></script>
+    <script src="../scripts/gallery.js" defer></script>
+    <script src="../scripts/animations.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="icon" type="image/png" href="../images/logo.png">
+    <title>Strona Główna - Blackout</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="intro__container">
+            <h2 class="intro__heading">
+                <span class="intro__text --bigger">
+                    <span class="--black">Black</span><span class="--red">out</span>
+                </span>
+            </h2>
+            <h2 class="intro__heading">
+                <span class="intro__text hero__heading-rest">magiczne imprezy</span>
+            </h2>
+        </div>
+        <div class="intro__slider">
+        </div>
+    </div>
+    <header class="primary-header">
+        <div class="primary-header__container">
+            <div class="container primary-header-flex">
+                <a href="#"><img src="../images/logo.png" class="primary-header__logo" alt="logo Blackout"></a>
+                <nav class="primary-nav">
+                    <ul role="list" class="primary-nav__links">
+                        <li><a href="../" class="primary-nav__link"><i class="fas fa-home"></i>Strona Główna</a></li>
+                        <li><a href="#" class="primary-nav__link primary-nav__link--active"><i class="fas fa-photo-film"></i>Galeria</a></li>
+                        <li><a href="../imprezy/" class="primary-nav__link"><i class="fas fa-champagne-glasses"></i>Imprezy</a></li>
+                        <li><a href="../regulamin/" class="primary-nav__link"><i class="fas fa-book"></i>Regulamin</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn primary-header-btn btn--yellow-border"><i class="fa-solid fa-ticket"></i>Kup bilety</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="gallery">
+            <div class="container section-container flex">
+                <h2 class="gallery__heading heading">Galeria</h2>
+                <div class="section-container full-size">
+                    <div class="gallery__box" id="gallery__box">
+                        <div class="gallery__column">
+                            <img class="gallery__image" src="../images/hero.JPG" alt="">
+                        </div>
+                        <div class="gallery__column">
+                            <img class="gallery__image" src="../images/beyond-poster.png" alt="">
+                        </div>
+                        <div class="gallery__column">
+                            <img class="gallery__image" src="../images/blackout1-poster.png" alt="">
+                        </div>
+                        <div class="gallery__column">
+                            <img class="gallery__image" src="../images/event.png" alt="">
+                        </div>
+                        <div class="gallery__column">
+                            <img class="gallery__image" src="../images/majowka-poster.png" alt="">
+                        </div>
+                        <div class="gallery__column">
+                            <img class="gallery__image" src="../images/icon.png" alt="">
+                        </div>
+                        <div class="gallery__column">
+                            <img class="gallery__image" src="../images/hero.JPG" alt="">
+                        </div>
+                        <div class="gallery__column">
+                            <img class="gallery__image" src="../images/hero.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__box container section-container">
+            
+            <div class="footer__column">
+                <h2 class="heading">Zapisz się do newslettera</h2>
+                <div class="newsletter">
+                    <input class="newsletter__input" type="text">
+                    <div class="btn btn--yellow-border">Zapisz</div>
+                </div>
+            </div>
+            <div class="footer__column">
+                <h2 class="heading">Obserwuj nas</h2>
+                <div>
+                    <div class="footer__socials">
+                        <a class="footer__social" href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="footer__social" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy"><small>&copy; Blackout Party <span id="currentDate"></span> | Kamil Langer Design</small></div>
+    </footer>
+
+    <nav class="mobile-nav">
+        <ul role="list" class="mobile-nav__links">
+            <li><a href="../" class="mobile-nav__link"><i class="fas fa-home"></i><span class="mobile-nav__text">Strona Główna</span></a></li>
+            <li><a href="#" class="mobile-nav__link mobile-nav__link--active"><i class="fas fa-photo-film"></i><span class="mobile-nav__text">Galeria</span></a></li>
+            <li><a href="../imprezy/" class="mobile-nav__link"><i class="fas fa-champagne-glasses"></i><span class="mobile-nav__text">Imprezy</span></a></li>
+            <li><a href="../regulamin/" class="mobile-nav__link"><i class="fas fa-book"></i><span class="mobile-nav__text">Regulamin</span></a></li>
+        </ul>
+    </nav>
+</body>
+</html>

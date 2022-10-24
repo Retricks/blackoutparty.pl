@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/countDown.js" defer></script>
     <script src="./scripts/animations.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -30,10 +31,10 @@
             
         </div>
     </div>
-    <header class="primary-header">
-        <div class="primary-header__container">
+    <header class="primary-header fullvh">
+        <div class="primary-header__container absolute">
             <div class="container primary-header-flex">
-                <a href="#"><img src="images/logo.png" class="primary-header__logo" alt="logo Blackout"></a>
+                <a href="#"><img src="./images/logo.png" class="primary-header__logo" alt="logo Blackout"></a>
                 <nav class="primary-nav">
                     <ul role="list" class="primary-nav__links">
                         <li><a href="#" class="primary-nav__link primary-nav__link--active"><i class="fas fa-home"></i>Strona Główna</a></li>
@@ -96,21 +97,16 @@
     </main>
     <footer class="footer">
         <div class="footer__box container section-container">
+            
             <div class="footer__column">
-                <h2 class="blackout__heading heading"><span class="--black">Black</span><span class="--red">out</span></h2>
-                <div>
-                    <a href="#"><img src="images/logo.png" class="footer__logo" alt="logo Blackout"></a>
-                </div>
-            </div>
-            <div class="footer__column">
-                <h2 class="heading">Zapisz się do newslettera</h2>
+                <h3 class="heading">Zapisz się do newslettera</h3>
                 <div class="newsletter">
                     <input class="newsletter__input" type="text">
                     <div class="btn btn--yellow-border">Zapisz</div>
                 </div>
             </div>
             <div class="footer__column">
-                <h2 class="heading">Obserwuj nas</h2>
+                <h3 class="heading">Obserwuj nas</h3>
                 <div>
                     <div class="footer__socials">
                         <a class="footer__social" href="#">
