@@ -161,7 +161,7 @@
 
 /* =======BODY======= */
 body{
-    background-image: var(--gradient-primary-color);
+    background-image: url(../images/pexels-pixabay-39561.jpg) no-repeat center cover;
     font-family: var(--ff-general);
     color: var(--bright-color);
 }
